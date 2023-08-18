@@ -1,5 +1,8 @@
+<script setup lang="ts">
+useHead({
+  title: useAppConfig().title,
+});
+</script>
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <NuxtLayout> default layout </NuxtLayout>
 </template>
