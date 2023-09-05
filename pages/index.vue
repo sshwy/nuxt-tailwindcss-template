@@ -9,13 +9,20 @@ const switchMode = () => {
 }
 </script>
 <template>
-  <div class="dark:bg-black">
+  <div>
     <div class="w-max mx-auto my-5">
-      <span class="dark:text-white">Hello World!</span>
+      <span>Hello World!</span>
     </div>
-    <div class="w-max mx-auto">
-      <button class="p-1 m-1 bg-slate-200 rounded hover:border border-black" @click="switchMode">Switch Color Mode</button>
-      <span class="dark:text-white">{{ mode }}</span>
+    <div class="w-max my-5 mx-auto dark:text-vsc-text-dark-1">
+      <button class="border dark:bg-vsc-bg-dark-2 p-1 m-1 bg-slate-200 rounded 
+      border-black dark:border-vsc-border-dark
+      dark:text-vsc-text-dark-2
+      dark:hover:text-vsc-text-dark-1
+      " @click="switchMode">Switch Color Mode</button>
+      <span>{{ mode }}</span>
+    </div>
+    <div class="w-max mx-auto my-5">
+      <RouterLink to="/_tailwind/" class="underline">Tailwind Page</RouterLink>
     </div>
   </div>
 </template>
