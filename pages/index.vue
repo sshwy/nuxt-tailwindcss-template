@@ -6,6 +6,7 @@ const switchMode = () => {
   else if (mode.value === 'dark') mode.value = 'light'
   else if (mode.value === 'light') mode.value = 'auto'
   else mode.value = 'auto'
+  console.log(mode.value)
 }
 </script>
 <template>
@@ -13,16 +14,12 @@ const switchMode = () => {
     <div class="w-max mx-auto my-5">
       <span>Hello World!</span>
     </div>
-    <div class="w-max my-5 mx-auto dark:text-vsc-text-dark-1">
-      <button class="border dark:bg-vsc-bg-dark-2 p-1 m-1 bg-slate-200 rounded 
-      border-black dark:border-vsc-border-dark
-      dark:text-vsc-text-dark-2
-      dark:hover:text-vsc-text-dark-1
-      " @click="switchMode">Switch Color Mode</button>
+    <div class="w-max my-5 mx-auto flex gap-x-2 items-center">
+      <UButton @click="switchMode">Switch Color Mode</UButton>
       <span>{{ mode }}</span>
     </div>
     <div class="w-max mx-auto my-5">
-      <RouterLink to="/_tailwind/" class="underline">Tailwind Page</RouterLink>
+      <ULink to="/_tailwind/" class="underline">Tailwind Page</ULink>
     </div>
   </div>
 </template>

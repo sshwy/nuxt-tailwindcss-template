@@ -1,4 +1,4 @@
-import { Config } from "tailwindcss";
+import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin"
 import colors from "tailwindcss/colors"
 
@@ -25,6 +25,7 @@ const config: Partial<Config> = {
       yellow: colors.yellow,
       red: colors.red,
       slate: colors.slate,
+      green: colors.green,
 
       // 1: sidebar background
       // 2: code background
@@ -66,12 +67,12 @@ const config: Partial<Config> = {
   },
   plugins: [
     plugin(({ addBase, theme }) => {
-      addBase({
-        ':root.dark': {
-          backgroundColor: theme("colors.vsc-bg-dark-1"),
-          color: theme("colors.vsc-text-dark-1")
-        }
-      })
+      // addBase({
+      //   ':root.dark': {
+      //     backgroundColor: theme("colors.vsc-bg-dark-1"),
+      //     color: theme("colors.vsc-text-dark-1")
+      //   }
+      // })
     })
   ],
 };
