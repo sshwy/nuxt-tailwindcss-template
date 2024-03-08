@@ -4,6 +4,7 @@ h1, h2 {
 }
 h1 {
   @apply text-2xl my-2;
+  color: red;
 }
 h2 {
   @apply text-xl my-2;

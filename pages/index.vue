@@ -14,6 +14,7 @@ const switchMode = () => {
     <div class="w-max mx-auto my-5">
       <span>Hello World!</span>
     </div>
+    <h1 class="text-center">Test H1 (this text should be red)</h1>
     <div class="w-max my-5 mx-auto flex gap-x-2 items-center">
       <UButton @click="switchMode">Switch Color Mode</UButton>
       <span>{{ mode }}</span>
