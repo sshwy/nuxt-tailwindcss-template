@@ -34,10 +34,9 @@ const links = [
 
 <template>
   <div class="w-full">
-    <div class="w-full flex px-2">
-      <div class="py-3.5 px-4 font-semibold border-b border-gray-200 dark:border-gray-800 text-nowrap"><span
-          class="text-primary">Proto</span>Toat</div>
-      <UHorizontalNavigation :links="links" class="border-b border-gray-200 dark:border-gray-800" />
+    <div class="w-full flex border-b border-gray-200 dark:border-gray-700 px-2">
+      <div class="py-3.5 px-2 font-semibold text-nowrap"><span class="text-primary">Proto</span>Toat</div>
+      <UHorizontalNavigation :links="links" />
     </div>
     <NuxtPage />
     <UNotifications />
