@@ -33,7 +33,7 @@ export const useDarkMode = () => {
 
   // client side init
   const initFlag = useState('use_dark_mode_init_flag', () => false)
-  if (process.client && !initFlag.value) {
+  if (import.meta.client && !initFlag.value) {
     // console.debug('client side init')
     darkQuery().addEventListener("change", () => updateDOM(state.value))
     updateDOM({ mode: 'auto' })
